@@ -16,7 +16,7 @@ cir = p.star(x=[], y=[], line_color='black', size=50, fill_color='gold')
 
 ds = cir.data_source
 
-# Create a callback that changes the star coordinates
+# Create a callback that changes the coordinates of the star
 def callback():
     new_data = dict()    
     new_data['x'] = np.random.randint(10, 90, size=1)    
