@@ -32,24 +32,21 @@ tools_to_show = 'box_select, lasso_select, save, reset, help'
 source = ColumnDataSource(data=dfd[dfd.Month==1])
 
 f_temp = figure(title='Temperature', x_axis_label='Temperature', y_axis_label='Power Consumption',
-                toolbar_location='above', tools=tools_to_show, 
-                width=300, height=300
+                toolbar_location='above', tools=tools_to_show                 
         )
 t1 = f_temp.circle_dot('Temperature', 'Zone1', source=source, size=10, color=Bokeh3[0], alpha=0.7)
 t2 = f_temp.circle_dot('Temperature', 'Zone2', source=source, size=10, color=Bokeh3[1], alpha=0.7)              
 t3 = f_temp.circle_dot('Temperature', 'Zone3', source=source, size=10, color=Bokeh3[2], alpha=0.7) 
 
 f_hum = figure(title='Humidity', x_axis_label='Humidity', y_axis_label='Power Consumption',
-                toolbar_location='above', tools=tools_to_show, 
-                width=300, height=300
+                toolbar_location='above', tools=tools_to_show                 
         )  
 h1 = f_hum.circle_dot('Humidity', 'Zone1', source=source, size=10, color=Bokeh3[0], alpha=0.7)
 h2 = f_hum.circle_dot('Humidity', 'Zone2', source=source, size=10, color=Bokeh3[1], alpha=0.7)              
 h3 = f_hum.circle_dot('Humidity', 'Zone3', source=source, size=10, color=Bokeh3[2], alpha=0.7)   
 
 f_wind = figure(title='Wind Speed', x_axis_label='Wind Speed', y_axis_label='Power Consumption',
-                toolbar_location='above', tools=tools_to_show, 
-                width=300, height=300
+                toolbar_location='above', tools=tools_to_show                 
         ) 
 w1 = f_wind.circle_dot('Wind Speed', 'Zone1', source=source, size=10, color=Bokeh3[0], alpha=0.7)
 w2 = f_wind.circle_dot('Wind Speed', 'Zone2', source=source, size=10, color=Bokeh3[1], alpha=0.7)              
