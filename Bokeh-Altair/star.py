@@ -6,8 +6,7 @@ from bokeh.models import Button
 from bokeh.plotting import figure, curdoc
 
 # Set up Bokeh figure with x, y ranges, no toolbar
-p = figure(x_range=(0, 100), y_range=(0, 100), 
-           toolbar_location=None)
+p = figure(x_range=(0, 100), y_range=(0, 100), toolbar_location=None)
 # Set the plot background and border to black
 p.border_fill_color = 'black'
 p.background_fill_color = 'black'
@@ -16,8 +15,8 @@ p.outline_line_color = None
 p.grid.grid_line_color = None
 
 # Add an initially invisible star glyph to the plot
-cir = p.star(x=[], y=[], line_color='black', 
-             size=50, fill_color='gold') 
+cir = p.scatter(x=[], y=[], line_color='black', marker='star',
+                size=50, fill_color='gold') 
 
 # Data source for updating the star glyph
 ds = cir.data_source

@@ -33,51 +33,42 @@ tools_to_show = 'box_select, lasso_select, save, reset, help'
 source = ColumnDataSource(data=dfd[dfd.Month==1])
 
 # Create temperature vs. power consumption plot
-f_temp = figure(title='Temperature', 
-                x_axis_label='Temperature', 
-                y_axis_label='Power Consumption',
-                toolbar_location='above', 
-                tools=tools_to_show                 
+f_temp = figure(title='Temperature', x_axis_label='Temperature', y_axis_label='Power Consumption',
+                toolbar_location='above', tools=tools_to_show                 
         )
 
 # Plot each zone's data with distinct colors from Bokeh3 palette
-t1 = f_temp.circle_dot('Temperature', 'Zone1', source=source, 
+t1 = f_temp.scatter('Temperature', 'Zone1', source=source, marker='circle_dot',
                        size=10, color=Bokeh3[0], alpha=0.7)
-t2 = f_temp.circle_dot('Temperature', 'Zone2', source=source, 
+t2 = f_temp.scatter('Temperature', 'Zone2', source=source, marker='circle_dot',
                        size=10, color=Bokeh3[1], alpha=0.7)              
-t3 = f_temp.circle_dot('Temperature', 'Zone3', source=source, 
+t3 = f_temp.scatter('Temperature', 'Zone3', source=source, marker='circle_dot',
                        size=10, color=Bokeh3[2], alpha=0.7) 
 
 # Create humidity vs. power consumption plot
-f_hum = figure(title='Humidity', 
-               x_axis_label='Humidity', 
-               y_axis_label='Power Consumption',
-               toolbar_location='above', 
-               tools=tools_to_show                 
+f_hum = figure(title='Humidity', x_axis_label='Humidity', y_axis_label='Power Consumption',
+               toolbar_location='above', tools=tools_to_show                 
         )  
 
 # Repeat plotting for humidity data
-h1 = f_hum.circle_dot('Humidity', 'Zone1', source=source, 
+h1 = f_hum.scatter('Humidity', 'Zone1', source=source, marker='circle_dot',
                       size=10, color=Bokeh3[0], alpha=0.7)
-h2 = f_hum.circle_dot('Humidity', 'Zone2', source=source, 
+h2 = f_hum.scatter('Humidity', 'Zone2', source=source, marker='circle_dot', 
                       size=10, color=Bokeh3[1], alpha=0.7)              
-h3 = f_hum.circle_dot('Humidity', 'Zone3', source=source, 
+h3 = f_hum.scatter('Humidity', 'Zone3', source=source, marker='circle_dot', 
                       size=10, color=Bokeh3[2], alpha=0.7)   
 
 # Create wind speed vs. power consumption plot
-f_wind = figure(title='Wind Speed', 
-                x_axis_label='Wind Speed', 
-                y_axis_label='Power Consumption',
-                toolbar_location='above', 
-                tools=tools_to_show     
+f_wind = figure(title='Wind Speed', x_axis_label='Wind Speed', y_axis_label='Power Consumption',
+                toolbar_location='above', tools=tools_to_show     
         ) 
 
 # Repeat plotting for wind speed
-w1 = f_wind.circle_dot('Wind Speed', 'Zone1', source=source, 
+w1 = f_wind.scatter('Wind Speed', 'Zone1', source=source, marker='circle_dot', 
                        size=10, color=Bokeh3[0], alpha=0.7)
-w2 = f_wind.circle_dot('Wind Speed', 'Zone2', source=source, 
+w2 = f_wind.scatter('Wind Speed', 'Zone2', source=source, marker='circle_dot', 
                        size=10, color=Bokeh3[1], alpha=0.7)              
-w3 = f_wind.circle_dot('Wind Speed', 'Zone3', source=source, 
+w3 = f_wind.scatter('Wind Speed', 'Zone3', source=source, marker='circle_dot', 
                        size=10, color=Bokeh3[2], alpha=0.7)   
 
 # Arrange plots horizontally
@@ -100,8 +91,7 @@ toggle_z3.js_link('active', h3, 'visible')
 toggle_z3.js_link('active', w3, 'visible')
 
 # Slider for selecting month
-slider_month = Slider(start=1, end=12, step=1, 
-                      value=1, title='Month')
+slider_month = Slider(start=1, end=12, step=1, value=1, title='Month')
 
 # Function to update data based on selected month
 def update_data(attr, old, new):
@@ -114,5 +104,4 @@ def update_data(attr, old, new):
 slider_month.on_change('value', update_data)
 
 # Add widgets and plots to the Bokeh document
-curdoc().add_root(column(row(toggle_z1, toggle_z2, toggle_z3, 
-                            slider_month),f))
+curdoc().add_root(column(row(toggle_z1, toggle_z2, toggle_z3, slider_month),f)) 
