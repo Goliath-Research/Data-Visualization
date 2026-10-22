@@ -150,6 +150,7 @@ def _(alt, cars):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13, grid=False)
     )
+    _chart
     return _chart
 
 
@@ -184,6 +185,7 @@ def _(alt, cars):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13, grid=False)
     )
+    _chart
     return _chart
 
 
@@ -207,6 +209,7 @@ def _(alt, cars):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13, grid=False)
     )
+    _chart
     return _chart
 
 
@@ -230,6 +233,7 @@ def _(alt, cars):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13, grid=False)
     )
+    _chart
     return _chart
 
 
@@ -252,6 +256,7 @@ def _(alt, cars):
         .encode(x="body_style", y="price")
         .properties(width=500, title=f"extent = {student_extent}")
     )
+    _chart
     return _chart
 
 
@@ -290,6 +295,7 @@ def _(alt, priced):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13)
     )
+    _chart
     return _chart
 
 
@@ -307,6 +313,7 @@ def _(alt, priced):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13)
     )
+    _chart
     return _chart
 
 
@@ -324,6 +331,7 @@ def _(alt, priced):
         )
         .configure_axis(titleFontSize=16, labelFontSize=13)
     )
+    _chart
     return _chart
 
 
@@ -345,6 +353,7 @@ def _(alt, cars):
         .encode(x="price:Q", y="fuel_type:N")
         .properties(title="Strip Plot of Price by Fuel type")
     )
+    _chart
     return _chart
 
 
@@ -356,6 +365,7 @@ def _(alt, cars):
         .encode(x="price:Q", y="body_style:N")
         .properties(width=600, height=200, title="Strip Plot of Price by Body style")
     )
+    _chart
     return _chart
 
 
@@ -396,6 +406,7 @@ def _(alt, cars):
         ),
     )
     _chart = heat_rect + heat_text
+    _chart
     return _chart
 
 

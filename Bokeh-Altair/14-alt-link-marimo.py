@@ -147,6 +147,7 @@ def _(alt, cars):
         )
         .add_params(_brush)
     )
+    _chart
     return _chart
 
 
@@ -163,6 +164,7 @@ def _(alt, cars):
         )
         .add_params(brush_x)
     )
+    _chart
     return _chart
 
 
@@ -179,6 +181,7 @@ def _(alt, cars):
         )
         .add_params(brush_y)
     )
+    _chart
     return _chart
 
 
@@ -226,6 +229,7 @@ def _(alt, cars):
         .transform_filter(_brush)
     )
     _chart = _points | _bars
+    _chart
     return _chart
 
 
@@ -263,6 +267,7 @@ def _(alt, cars):
         .transform_filter(_brush)
     )
     _chart = _points & _bars
+    _chart
     return _chart
 
 
@@ -296,6 +301,7 @@ def _(alt, cars):
         alt.X("city_mpg", scale=alt.Scale(domain=[10, 55]))
     ).properties(title={"text": "Car Price vs. City (mpg)", "fontSize": 16})
     _chart = _highway | _city
+    _chart
     return _chart
 
 
@@ -322,6 +328,7 @@ def _(alt, cars):
         title={"text": "Car Price vs. Horsepower", "fontSize": 16}
     )
     _chart = _highway | _city | _horsepower
+    _chart
     return _chart
 
 
@@ -352,6 +359,7 @@ def _(alt, cars):
     _chart = alt.layer(background, highlight, data=cars).repeat(
         column=["length", "width", "height"]
     )
+    _chart
     return _chart
 
 
@@ -438,6 +446,7 @@ def _(alt, recent):
         .transform_filter(sun_brush)
     )
     _chart = alt.layer(sun_bars, line_min, line_mean, line_max, data=recent)
+    _chart
     return _chart
 
 
@@ -465,6 +474,7 @@ def _(alt, recent):
     )
     lower = _base.properties(height=60).add_params(overview_brush)
     _chart = upper & lower
+    _chart
     return _chart
 
 

@@ -118,6 +118,7 @@ def _(daily, px, y_top, zone_order):
         title="Power consumption",
     )
     _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 
@@ -165,6 +166,7 @@ def _(mo, zone_order):
         value=zone_order,
         label="Zones",
     )
+    zone_pick
     return (zone_pick,)
 
 
@@ -182,6 +184,7 @@ def _(daily, px, y_top, zone_order, zone_pick):
             title="Power consumption",
         )
         _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 
@@ -207,6 +210,7 @@ def _(daily, px, y_top, zone_order):
         title="Zone 1 and Zone 3",
     )
     _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 

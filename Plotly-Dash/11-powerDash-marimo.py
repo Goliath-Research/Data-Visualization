@@ -158,6 +158,7 @@ def _(january, px, zones):
         width=800,
         title="January, temperature",
     )
+    _fig
     return _fig
 
 
@@ -171,6 +172,7 @@ def _(january, px, zones):
         width=800,
         title="January, humidity",
     )
+    _fig
     return _fig
 
 
@@ -184,6 +186,7 @@ def _(january, px, zones):
         width=800,
         title="January, wind speed",
     )
+    _fig
     return _fig
 
 
@@ -237,6 +240,7 @@ def _(mo, zone_order):
         value=zone_order,
         label="Zones",
     )
+    zone_pick
     return (zone_pick,)
 
 
@@ -251,6 +255,7 @@ def _(mo):
         label="Month",
         full_width=True,
     )
+    month_choice
     return (month_choice,)
 
 
@@ -270,6 +275,7 @@ def _(daily, month_choice, month_names, px, zone_order, zone_pick):
             hover_data={"Temperature": ":.2f", "value": ":.2f"},
             title=_title,
         )
+    _fig
     return _fig
 
 
@@ -289,6 +295,7 @@ def _(daily, month_choice, month_names, px, zone_order, zone_pick):
             hover_data={"Humidity": ":.2f", "value": ":.2f"},
             title=_title,
         )
+    _fig
     return _fig
 
 
@@ -308,6 +315,7 @@ def _(daily, month_choice, month_names, px, zone_order, zone_pick):
             hover_data={"Wind Speed": ":.2f", "value": ":.2f"},
             title=_title,
         )
+    _fig
     return _fig
 
 

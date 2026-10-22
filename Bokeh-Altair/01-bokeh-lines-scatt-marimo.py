@@ -82,6 +82,7 @@ def _(mo):
 def _(figure, x, y):
     _fig = figure(title="Simple Line Graph", x_axis_label="x", y_axis_label="y")
     _fig.line(x, y, line_width=2)
+    _fig
     return _fig
 
 
@@ -106,6 +107,7 @@ def _(figure, x, y):
         width=600,
     )
     _fig.line(x, y, line_width=2)
+    _fig
     return _fig
 
 
@@ -128,6 +130,7 @@ def _(figure, x, y):
         width=600,
     )
     _fig.line(x, y, line_width=2)
+    _fig
     return _fig
 
 
@@ -163,6 +166,7 @@ def _(figure, x, y):
         size=10,
     )
     _fig.legend.location = "top_center"
+    _fig
     return _fig
 
 
@@ -197,6 +201,7 @@ def _(figure, x, y):
         size=10,
     )
     _fig.legend.location = student_location
+    _fig
     return _fig
 
 
@@ -242,6 +247,7 @@ def _(figure, x, y):
         line_color="white",
         size=12,
     )
+    _fig
     return _fig
 
 
@@ -292,6 +298,7 @@ def _(figure, x, y, y2, y3):
     )
     _fig.legend.title = "Lines"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -341,6 +348,7 @@ def _(figure, x1, y, y2, y3):
     )
     _fig.legend.title = "Lines"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -368,6 +376,7 @@ def _(figure, x, y, y2, y3):
     _fig.scatter(x, y3, legend_label="Circle 3", fill_color="grey", size=30)
     _fig.legend.title = "Circles"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -417,6 +426,7 @@ def _(figure, x, y, y2, y3):
     )
     _fig.legend.title = "Circles"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -466,6 +476,7 @@ def _(figure, x, y, y2, y3):
     )
     _fig.legend.title = "Circles"
     _fig.legend.location = "top_left"
+    _fig
     return _fig
 
 
@@ -518,6 +529,7 @@ def _(figure, x, y, y2, y3):
     _fig.legend.label_text_font = "arial"
     _fig.legend.label_text_font_style = "bold"
     _fig.legend.label_text_color = "black"
+    _fig
     return _fig
 
 
@@ -575,6 +587,7 @@ def _(figure, x, y, y2, y3):
     _fig.legend.border_line_alpha = 0.3
     _fig.legend.background_fill_color = "silver"
     _fig.legend.background_fill_alpha = 0.3
+    _fig
     return _fig
 
 
@@ -636,6 +649,7 @@ def _(figure, x, y, y2, y3):
     _fig.title.align = "center"
     _fig.title.background_fill_color = "lightgrey"
     _fig.title.text_color = "black"
+    _fig
     return _fig
 
 
@@ -686,6 +700,7 @@ def _(figure, x, y, y2, y3):
     )
     _fig.legend.title = "Squares"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -742,6 +757,7 @@ def _(figure, x, y, y2, y3):
     )
     _fig.legend.title = "Markers"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -786,6 +802,7 @@ def _(figure, x, y, y2, y3):
     )
     _fig.legend.title = "Markers"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 

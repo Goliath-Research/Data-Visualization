@@ -144,6 +144,7 @@ def _(alt, cars):
         )
         .add_params(interval)
     )
+    _chart
     return _chart
 
 
@@ -160,6 +161,7 @@ def _(alt, cars):
         )
         .add_params(interval_x)
     )
+    _chart
     return _chart
 
 
@@ -176,6 +178,7 @@ def _(alt, cars):
         )
         .add_params(interval_y)
     )
+    _chart
     return _chart
 
 
@@ -202,6 +205,7 @@ def _(alt, cars):
         )
         .add_params(point)
     )
+    _chart
     return _chart
 
 
@@ -218,6 +222,7 @@ def _(alt, cars):
         )
         .add_params(point_nearest)
     )
+    _chart
     return _chart
 
 
@@ -259,6 +264,7 @@ def _(alt, cars):
         .add_params(styles)
     )
     _chart = scatter | legend
+    _chart
     return _chart
 
 
@@ -301,6 +307,7 @@ def _(alt, cars):
         .add_params(pairs)
     )
     _chart = scatter_pairs | legend_pairs
+    _chart
     return _chart
 
 
@@ -346,6 +353,7 @@ def _(alt, cars):
         )
         .add_params(chosen)
     )
+    _chart
     return _chart
 
 
@@ -378,6 +386,7 @@ def _(alt, cars):
         .add_params(chosen_none)
         .transform_filter(chosen_none)
     )
+    _chart
     return _chart
 
 
@@ -413,6 +422,7 @@ def _(alt, cars):
         )
         .add_params(chosen_radio)
     )
+    _chart
     return _chart
 
 
@@ -445,6 +455,7 @@ def _(alt, cars):
         )
         .add_params(price_cut)
     )
+    _chart
     return _chart
 
 

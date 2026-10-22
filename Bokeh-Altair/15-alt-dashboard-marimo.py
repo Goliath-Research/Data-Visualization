@@ -183,6 +183,7 @@ def _(alt, melted):
         .add_params(_zones)
     )
     _chart = _temperature | _legend
+    _chart
     return _chart
 
 
@@ -228,6 +229,7 @@ def _(alt, melted):
         .add_params(_zones)
     )
     _chart = _humidity | _legend
+    _chart
     return _chart
 
 
@@ -265,6 +267,7 @@ def _(alt, melted):
         .add_params(_zones)
     )
     _chart = _wind | _legend
+    _chart
     return _chart
 
 
@@ -316,6 +319,7 @@ def _(alt, melted):
         alt.X("Wind Speed:Q", scale=alt.Scale(zero=False))
     ).properties(title={"text": "Wind Speed vs. Power", "fontSize": 16})
     _chart = _temperature | _humidity | _wind | _legend
+    _chart
     return _chart
 
 
@@ -357,6 +361,7 @@ def _(alt, melted):
         alt.X("Wind Speed:Q", scale=alt.Scale(zero=False))
     ).properties(title={"text": "Wind Speed vs. Power", "fontSize": 16})
     _chart = (_temperature | _humidity) & (_wind | _legend)
+    _chart
     return _chart
 
 
@@ -411,6 +416,7 @@ def _(alt, melted):
         alt.X("Wind Speed:Q", scale=alt.Scale(zero=False))
     ).properties(title={"text": "Wind Speed vs. Power", "fontSize": 16})
     _chart = _temperature | _humidity | _wind | _legend
+    _chart
     return _chart
 
 
@@ -455,6 +461,7 @@ def _(alt, melted):
         alt.X("Wind Speed:Q", scale=alt.Scale(zero=False))
     ).properties(title={"text": "Wind Speed vs. Power", "fontSize": 16})
     _chart = (_temperature | _humidity) & (_wind | _legend)
+    _chart
     return _chart
 
 

@@ -139,6 +139,7 @@ def _(first_quarter, px, x_top, y_top):
     )
     _fig.update_xaxes(range=[0, x_top])
     _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 
@@ -200,6 +201,7 @@ def _(mo):
         label="Months",
         full_width=True,
     )
+    month_span
     return (month_span,)
 
 
@@ -220,6 +222,7 @@ def _(daily, month_span, px, x_top, y_top):
     )
     _fig.update_xaxes(range=[0, x_top])
     _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 

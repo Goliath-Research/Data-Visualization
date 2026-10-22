@@ -151,6 +151,7 @@ def _(alt, cars):
             alt.Y("count()", title="Count"),
         )
     )
+    _chart
     return _chart
 
 
@@ -173,6 +174,7 @@ def _(alt, cars):
         )
         .properties(width=300)
     )
+    _chart
     return _chart
 
 
@@ -187,6 +189,7 @@ def _(alt, cars):
         )
         .properties(width=300)
     )
+    _chart
     return _chart
 
 
@@ -211,6 +214,7 @@ def _(alt, cars):
             alt.Color("count()", legend=alt.Legend(title="Count")),
         )
     )
+    _chart
     return _chart
 
 
@@ -225,6 +229,7 @@ def _(alt, cars):
             alt.Color("highway_mpg", title="Highway (MPG)"),
         )
     )
+    _chart
     return _chart
 
 
@@ -239,6 +244,7 @@ def _(alt, cars):
             alt.Color("body_style", title="Body Style"),
         )
     )
+    _chart
     return _chart
 
 
@@ -264,6 +270,7 @@ def _(alt, cars):
         )
         .properties(title={"text": "Make & Fuel Type", "fontSize": 20})
     )
+    _chart
     return _chart
 
 
@@ -280,6 +287,7 @@ def _(alt, cars):
         )
         .properties(title={"text": "Make & Fuel Type", "fontSize": 20})
     )
+    _chart
     return _chart
 
 
@@ -296,6 +304,7 @@ def _(alt, cars):
         )
         .properties(title={"text": "Make & Fuel Type", "fontSize": 20})
     )
+    _chart
     return _chart
 
 
@@ -328,6 +337,7 @@ def _(alt, cars):
             width=600,
         )
     )
+    _chart
     return _chart
 
 
@@ -358,6 +368,7 @@ def _(alt, cars):
         )
         .properties(width=600)
     )
+    _chart
     return _chart
 
 
@@ -401,6 +412,7 @@ def _(alt, cars):
         .transform_aggregate(avg_price="mean(price)", groupby=["make"])
         .properties(title={"text": "Average Price by Make", "fontSize": 20})
     )
+    _chart
     return _chart
 
 
@@ -437,6 +449,7 @@ def _(alt, cars):
         .properties(title={"text": "Min Price by Make", "fontSize": 20})
     )
     _side_by_side = min_price | max_price
+    _side_by_side
     return _side_by_side
 
 
@@ -473,6 +486,7 @@ def _(alt, cars):
         .properties(title={"text": "Min Price by Make", "fontSize": 20})
     )
     _stacked = _min_price & _max_price
+    _stacked
     return _stacked
 
 
@@ -511,6 +525,7 @@ def _(alt, make_table):
         text="count:Q"
     )
     _chart = horizontal + labels
+    _chart
     return _chart
 
 

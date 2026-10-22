@@ -138,6 +138,7 @@ def _(alt, dimens):
         .encode(alt.X("length:Q", bin=True), y="count()")
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -149,6 +150,7 @@ def _(alt, dimens):
         .encode(alt.X("length:Q", bin=alt.Bin(maxbins=20)), y="count()")
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -178,6 +180,7 @@ def _(alt, dimens):
         )
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -196,6 +199,7 @@ def _(alt, dimens):
             height=300,
         )
     )
+    _chart
     return _chart
 
 
@@ -221,6 +225,7 @@ def _(alt, dimens):
         )
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -271,6 +276,7 @@ def _(alt, dimens):
         size=alt.value(1),
     )
     _chart = bars + min_rule + mean_rule + max_rule
+    _chart
     return _chart
 
 
@@ -292,6 +298,7 @@ def _(alt, dimens):
         .encode(alt.X("width:Q", bin=True), y="count()")
         .properties(title={"text": "Car Width", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -307,6 +314,7 @@ def _(alt, cars):
         )
         .properties(title={"text": "Car Width", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -318,6 +326,7 @@ def _(alt, dimens):
         .encode(alt.X("height:Q", bin=True), y="count()")
         .properties(title={"text": "Car Height", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -333,6 +342,7 @@ def _(alt, cars):
         )
         .properties(title={"text": "Car Height", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -373,6 +383,7 @@ def _(alt, dimens):
             },
         )
     )
+    _chart
     return _chart
 
 
@@ -396,6 +407,7 @@ def _(alt, cars):
         .encode(alt.X("length:Q"), y="count()")
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -407,6 +419,7 @@ def _(alt, dimens):
         .encode(alt.X("length:Q"), y="count()")
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -423,6 +436,7 @@ def _(alt, dimens):
         )
         .properties(title={"text": "Overlapping Lines", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -444,6 +458,7 @@ def _(alt, dimens):
         .encode(alt.X("length:Q"), y="count()")
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -455,6 +470,7 @@ def _(alt, dimens):
         .encode(alt.X("length:Q"), y="count()")
         .properties(title={"text": "Car Length", "fontSize": 16})
     )
+    _chart
     return _chart
 
 
@@ -474,6 +490,7 @@ def _(alt, dimens):
             title={"text": "Overlapping Areas", "fontSize": 16},
         )
     )
+    _chart
     return _chart
 
 
@@ -493,6 +510,7 @@ def _(alt, dimens):
             title={"text": "Overlapping Areas", "fontSize": 16},
         )
     )
+    _chart
     return _chart
 
 

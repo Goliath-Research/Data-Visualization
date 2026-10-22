@@ -129,6 +129,7 @@ def _(daily_zones, px, y_top):
     )
     _fig.update_yaxes(range=[0, y_top])
     _fig.update_traces(line_color="orangered")
+    _fig
     return _fig
 
 
@@ -178,6 +179,7 @@ def _(mo):
         label="Zone",
         inline=True,
     )
+    zone_choice
     return (zone_choice,)
 
 
@@ -193,6 +195,7 @@ def _(daily_zones, px, y_top, zone_choice):
     )
     _fig.update_yaxes(range=[0, y_top])
     _fig.update_traces(line_color="orangered")
+    _fig
     return _fig
 
 

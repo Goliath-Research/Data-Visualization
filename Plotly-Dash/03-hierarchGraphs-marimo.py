@@ -146,6 +146,7 @@ def _(cars, px):
         height=600,
         title="Body style, then fuel type",
     )
+    _fig
     return _fig
 
 
@@ -175,6 +176,7 @@ def _(cars, px):
         height=600,
         title="Fuel type, then body style",
     )
+    _fig
     return _fig
 
 
@@ -198,6 +200,7 @@ def _(cars, px):
         height=600,
         title="Make, then body style",
     )
+    _fig
     return _fig
 
 
@@ -229,6 +232,7 @@ def _(cars, px):
         height=600,
         title="Sized by the sum of price",
     )
+    _fig
     return _fig
 
 
@@ -279,6 +283,7 @@ def _(px, tips):
         height=600,
         title="Day, then time",
     )
+    _fig
     return _fig
 
 
@@ -294,6 +299,7 @@ def _(px, tips):
         height=600,
         title="Colored by tip",
     )
+    _fig
     return _fig
 
 
@@ -310,6 +316,7 @@ def _(px, tips):
         height=600,
         title="Tip formatted to two decimals",
     )
+    _fig
     return _fig
 
 
@@ -362,6 +369,7 @@ def _(px, tips):
         height=600,
         title="Colored by sex",
     )
+    _fig
     return _fig
 
 
@@ -377,6 +385,7 @@ def _(px, tips):
         height=600,
         title="Named colors for sex",
     )
+    _fig
     return _fig
 
 
@@ -399,6 +408,7 @@ def _(cars, px):
         height=500,
         title="Body style, then fuel type",
     )
+    _fig
     return _fig
 
 
@@ -411,6 +421,7 @@ def _(cars, px):
         height=500,
         title="Fuel type, then body style",
     )
+    _fig
     return _fig
 
 
@@ -424,6 +435,7 @@ def _(cars, px):
         height=500,
         title="Sized by the sum of price",
     )
+    _fig
     return _fig
 
 
@@ -437,6 +449,7 @@ def _(cars, px):
         height=500,
         title="Body style, fuel type, and make",
     )
+    _fig
     return _fig
 
 
@@ -453,6 +466,7 @@ def _(px, tips):
         height=500,
         title="Colored by the weighted tip",
     )
+    _fig
     return _fig
 
 
@@ -467,6 +481,7 @@ def _(px, tips):
         height=500,
         title="Colored by time of day",
     )
+    _fig
     return _fig
 
 
@@ -489,6 +504,7 @@ def _(cars, px):
         height=500,
         title="Body style, then fuel type",
     )
+    _fig
     return _fig
 
 
@@ -501,6 +517,7 @@ def _(cars, px):
         height=500,
         title="Fuel type, then body style",
     )
+    _fig
     return _fig
 
 
@@ -514,6 +531,7 @@ def _(cars, px):
         height=500,
         title="Sized by the sum of price",
     )
+    _fig
     return _fig
 
 
@@ -527,6 +545,7 @@ def _(cars, px):
         height=700,
         title="One root named Cars",
     )
+    _fig
     return _fig
 
 
@@ -543,6 +562,7 @@ def _(px, tips):
         height=600,
         title="Colored by the weighted tip",
     )
+    _fig
     return _fig
 
 
@@ -557,6 +577,7 @@ def _(px, tips):
         height=600,
         title="Colored by time of day",
     )
+    _fig
     return _fig
 
 

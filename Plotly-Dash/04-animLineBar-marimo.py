@@ -172,6 +172,7 @@ def _(px, weekly):
         width=800,
         title="Weekly temperature in Tetouan, 2017",
     )
+    _fig
     return _fig
 
 
@@ -215,6 +216,7 @@ def _(px, weekly_anim):
         width=800,
         title="Weekly temperature, growing by week",
     )
+    _fig
     return _fig
 
 
@@ -238,6 +240,7 @@ def _(px, weekly_anim):
         width=800,
         title="Temperature, humidity, and diffuse flows",
     )
+    _fig
     return _fig
 
 
@@ -255,6 +258,7 @@ def _(px, weekly_anim):
         title="Shared hover at each date",
     )
     _fig.update_layout(hovermode="x unified")
+    _fig
     return _fig
 
 
@@ -273,6 +277,7 @@ def _(px, weekly_anim):
         title="Weekly power by zone",
     )
     _fig.update_layout(hovermode="x unified")
+    _fig
     return _fig
 
 
@@ -332,6 +337,7 @@ def _(px, weekly_zones):
         width=800,
         title="Power by zone, one week at a time",
     )
+    _fig
     return _fig
 
 
@@ -383,6 +389,7 @@ def _(monthly_zones, px):
         width=800,
         title="Power by zone, one month at a time",
     )
+    _fig
     return _fig
 
 

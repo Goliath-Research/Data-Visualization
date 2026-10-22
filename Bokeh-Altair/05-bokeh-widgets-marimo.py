@@ -156,6 +156,7 @@ def _(ColumnDataSource, Slider, column, figure):
     _slider = Slider(start=1, end=100, step=1, value=30, title="Size")
     _slider.js_link("value", _glyph.glyph, "size")
     _layout = column(_slider, _fig)
+    _layout
     return _layout
 
 
@@ -188,6 +189,7 @@ def _(ColumnDataSource, Slider, column, figure):
     _slider = Slider(start=1, end=100, step=1, value=30, title="Size")
     _slider.js_link("value", _glyph.glyph, "size")
     _layout = column(_fig, _slider)
+    _layout
     return _layout
 
 
@@ -220,6 +222,7 @@ def _(ColumnDataSource, Slider, figure, row):
     _slider = Slider(start=1, end=100, step=1, value=30, title="Size")
     _slider.js_link("value", _glyph.glyph, "size")
     _layout = row(_fig, _slider)
+    _layout
     return _layout
 
 
@@ -254,6 +257,7 @@ def _(ColorPicker, ColumnDataSource, column, figure):
     _picker = ColorPicker(title="Circles Color", color="forestgreen")
     _picker.js_link("color", _glyph.glyph, "fill_color")
     _layout = column(_picker, _fig)
+    _layout
     return _layout
 
 
@@ -288,6 +292,7 @@ def _(ColumnDataSource, Select, column, figure, marker_names):
     _select = Select(title="Select marker", value="circle", options=marker_names)
     _select.js_link("value", _glyph.glyph, "marker")
     _layout = column(_select, _fig)
+    _layout
     return _layout
 
 
@@ -327,6 +332,7 @@ def _(ColorPicker, ColumnDataSource, Select, Slider, column, figure, marker_name
     _select = Select(title="Select marker", value="circle", options=marker_names)
     _select.js_link("value", _glyph.glyph, "marker")
     _layout = row(_fig, column(_select, _picker, _slider))
+    _layout
     return _layout
 
 
@@ -352,6 +358,7 @@ def _(ColumnDataSource, figure, np):
         title="Quadratic Function",
     )
     _fig.line("x", "y", source=_source, line_width=2, color="green", line_alpha=0.7)
+    _fig
     return _fig
 
 
@@ -401,6 +408,7 @@ def _(ColumnDataSource, CustomJS, Slider, column, figure, np, row):
     _slider_h.js_on_change("value", _callback)
     _slider_k.js_on_change("value", _callback)
     _layout = row(_fig, column(_slider_a, _slider_h, _slider_k))
+    _layout
     return _layout
 
 
@@ -438,6 +446,7 @@ def _(ColumnDataSource, CustomJS, Slider, column, figure, np):
     _slider_h.js_on_change("value", _callback)
     _slider_k.js_on_change("value", _callback)
     _layout = column(_slider_a, _slider_h, _slider_k, _fig)
+    _layout
     return _layout
 
 
@@ -515,6 +524,7 @@ def _(Bokeh5, cars, figure):
         )
     _fig.legend.location = "top_right"
     _fig.legend.click_policy = "hide"
+    _fig
     return _fig
 
 
@@ -548,6 +558,7 @@ def _(Bokeh5, cars, figure):
         )
     _fig.legend.location = "top_right"
     _fig.legend.click_policy = "mute"
+    _fig
     return _fig
 
 

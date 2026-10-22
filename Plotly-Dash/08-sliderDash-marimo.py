@@ -149,6 +149,7 @@ def _(daily, px, x_top, y_top):
     )
     _fig.update_xaxes(range=[0, x_top])
     _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 
@@ -208,6 +209,7 @@ def _(mo):
         show_value=True,
         label="Month",
     )
+    month_choice
     return (month_choice,)
 
 
@@ -227,6 +229,7 @@ def _(daily, month_choice, month_names, px, x_top, y_top):
     )
     _fig.update_xaxes(range=[0, x_top])
     _fig.update_yaxes(range=[0, y_top])
+    _fig
     return _fig
 
 

@@ -185,6 +185,7 @@ def _(father_counts, father_source, figure):
         title="Father Occupation",
     )
     _fig.vbar(x="values", top="counts", width=0.8, source=father_source)
+    _fig
     return _fig
 
 
@@ -211,6 +212,7 @@ def _(father_counts, father_source, figure):
         legend_field="values",
         source=father_source,
     )
+    _fig
     return _fig
 
 
@@ -284,6 +286,7 @@ def _(ColumnDataSource, Spectral, figure, mother_counts):
         legend_field="values",
         source=_source,
     )
+    _fig
     return _fig
 
 
@@ -353,6 +356,7 @@ def _(figure, occupations, parent, stacked_data):
     _fig.x_range.range_padding = 0.1
     _fig.legend.location = "top_right"
     _fig.legend.orientation = "vertical"
+    _fig
     return _fig
 
 
@@ -386,6 +390,7 @@ def _(figure, occupations, parent, stacked_data):
     _fig.x_range.range_padding = 0.1
     _fig.legend.location = "top_right"
     _fig.legend.orientation = "horizontal"
+    _fig
     return _fig
 
 
@@ -422,6 +427,7 @@ def _(figure, occupations, parent, stacked_data):
     _fig.y_range.range_padding = 0.1
     _fig.legend.location = "top_right"
     _fig.legend.orientation = "vertical"
+    _fig
     return _fig
 
 
@@ -448,6 +454,7 @@ def _(figure, occupations, parent, stacked_data):
     _fig.y_range.range_padding = 0.1
     _fig.legend.location = "center"
     _fig.legend.orientation = "horizontal"
+    _fig
     return _fig
 
 
@@ -502,6 +509,7 @@ def _(ColumnDataSource, FactorRange, factor_cmap, figure, grouped_counts, groupe
     _fig.x_range.range_padding = 0.1
     _fig.xaxis.major_label_orientation = 1
     _fig.xgrid.grid_line_color = None
+    _fig
     return _fig
 
 

@@ -167,6 +167,7 @@ def _(daily, px):
         height=500,
         title="Temperature and Zone 1 power",
     )
+    _fig
     return _fig
 
 
@@ -182,6 +183,7 @@ def _(daily, px):
         height=500,
         title="Zone 1 in January",
     )
+    _fig
     return _fig
 
 
@@ -198,6 +200,7 @@ def _(daily, px):
         height=500,
         title="Zone 1 by month",
     )
+    _fig
     return _fig
 
 
@@ -231,6 +234,7 @@ def _(daily, px):
         height=500,
         title="Zone 1, point size is wind speed",
     )
+    _fig
     return _fig
 
 
@@ -251,6 +255,7 @@ def _(daily, px, wind_max, wind_min):
         height=500,
         title="Zone 1, color is wind speed",
     )
+    _fig
     return _fig
 
 
@@ -271,6 +276,7 @@ def _(daily, px, wind_max, wind_min):
         height=500,
         title="Zone 2 by month",
     )
+    _fig
     return _fig
 
 
@@ -291,6 +297,7 @@ def _(daily, px, wind_max, wind_min):
         height=500,
         title="Zone 3 by month",
     )
+    _fig
     return _fig
 
 
@@ -330,6 +337,7 @@ def _(daily_zones, px):
         height=500,
         title="Three zones by month",
     )
+    _fig
     return _fig
 
 
@@ -371,6 +379,7 @@ def _(daily_zones, px):
         width=800,
         title="Power by zone",
     )
+    _fig
     return _fig
 
 
@@ -384,6 +393,7 @@ def _(daily_zones, px):
         width=800,
         title="Power by zone",
     )
+    _fig
     return _fig
 
 
@@ -408,6 +418,7 @@ def _(daily, go):
             )
         ],
     )
+    box_buttons
     return box_buttons
 
 
@@ -432,6 +443,7 @@ def _(daily, go):
             )
         ],
     )
+    box_menu
     return box_menu
 
 
@@ -511,6 +523,7 @@ def _(go, weekly):
             )
         ],
     )
+    weather_lines
     return weather_lines
 
 

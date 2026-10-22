@@ -140,6 +140,7 @@ def _(daily_zones, px):
         hover_data={"Power": ":.2f"},
         title="Power consumption in Zone1",
     )
+    _fig
     return _fig
 
 
@@ -153,6 +154,7 @@ def _(daily_zones, px):
         hover_data={"Power": ":.2f"},
         title="Power consumption in Zone2",
     )
+    _fig
     return _fig
 
 
@@ -166,6 +168,7 @@ def _(daily_zones, px):
         hover_data={"Power": ":.2f"},
         title="Power consumption in Zone3",
     )
+    _fig
     return _fig
 
 
@@ -227,6 +230,7 @@ def _(mo):
         value="Zone1",
         label="Zone",
     )
+    zone_choice
     return (zone_choice,)
 
 
@@ -240,6 +244,7 @@ def _(daily_zones, px, zone_choice):
         hover_data={"Power": ":.2f"},
         title=f"Power consumption in {zone_choice.value}",
     )
+    _fig
     return _fig
 
 
@@ -264,6 +269,7 @@ def _(daily_zones, px):
         hover_data={"Power": ":.2f"},
         title=f"Power consumption in {student_zone}",
     )
+    _fig
     return _fig
 
 

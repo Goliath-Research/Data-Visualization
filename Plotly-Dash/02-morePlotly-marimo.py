@@ -150,6 +150,7 @@ def _(mo):
 @app.cell
 def _(cars, px):
     _fig = px.box(cars, x="make", y="price", width=800, title="Price by make")
+    _fig
     return _fig
 
 
@@ -163,6 +164,7 @@ def _(cars, px):
         width=800,
         title="Price by body style",
     )
+    _fig
     return _fig
 
 
@@ -177,6 +179,7 @@ def _(cars, px):
         width=800,
         title="Price by body style, every car",
     )
+    _fig
     return _fig
 
 
@@ -198,6 +201,7 @@ def _(cars, px):
         width=800,
         title="Price by body style",
     )
+    _fig
     return _fig
 
 
@@ -219,6 +223,7 @@ def _(cars, px):
         width=800,
         title="Price by body style",
     )
+    _fig
     return _fig
 
 
@@ -233,6 +238,7 @@ def _(cars, px):
         width=800,
         title="Price by body style, every car",
     )
+    _fig
     return _fig
 
 
@@ -247,6 +253,7 @@ def _(cars, px):
         width=800,
         title="Violin with a box inside",
     )
+    _fig
     return _fig
 
 
@@ -262,6 +269,7 @@ def _(cars, px):
         width=800,
         title="Violin with a box and every car",
     )
+    _fig
     return _fig
 
 
@@ -285,6 +293,7 @@ def _(cars, px):
         width=800,
         title="Horsepower by body style",
     )
+    _fig
     return _fig
 
 
@@ -317,6 +326,7 @@ def _(cars, px):
         width=800,
         title="City MPG vs highway MPG",
     )
+    _fig
     return _fig
 
 
@@ -331,6 +341,7 @@ def _(cars, px):
         width=800,
         title="City MPG vs highway MPG, sized by price",
     )
+    _fig
     return _fig
 
 
@@ -348,6 +359,7 @@ def _(cars, px):
         height=500,
         title="Box margins",
     )
+    _fig
     return _fig
 
 
@@ -365,6 +377,7 @@ def _(cars, px):
         height=500,
         title="Violin margins",
     )
+    _fig
     return _fig
 
 
@@ -382,6 +395,7 @@ def _(cars, px):
         height=500,
         title="Histogram margins",
     )
+    _fig
     return _fig
 
 
@@ -399,6 +413,7 @@ def _(cars, px):
         height=500,
         title="Violin on x, box on y",
     )
+    _fig
     return _fig
 
 
@@ -462,12 +477,14 @@ def _(px, wide_counts):
         width=800,
         title="Doors and body style",
     )
+    _fig
     return _fig
 
 
 @app.cell
 def _(px, wide_counts):
     _fig = px.bar(wide_counts, width=800, title="Doors and body style")
+    _fig
     return _fig
 
 
@@ -479,6 +496,7 @@ def _(px, wide_counts):
         width=900,
         title="One column of panels",
     )
+    _fig
     return _fig
 
 
@@ -491,6 +509,7 @@ def _(px, wide_counts):
         height=900,
         title="One row of panels",
     )
+    _fig
     return _fig
 
 
@@ -516,6 +535,7 @@ def _(px, wide_counts):
         width=800,
         title="Panels by number of doors",
     )
+    _fig
     return _fig
 
 
@@ -544,6 +564,7 @@ def _(long_counts, px):
         width=800,
         title="Doors and body style",
     )
+    _fig
     return _fig
 
 
@@ -557,6 +578,7 @@ def _(long_counts, px):
         width=800,
         title="Colored by number of doors",
     )
+    _fig
     return _fig
 
 
@@ -570,6 +592,7 @@ def _(long_counts, px):
         width=800,
         title="The same counts as lines",
     )
+    _fig
     return _fig
 
 
@@ -591,6 +614,7 @@ def _(long_counts, px):
         width=800,
         title="Dash pattern by number of doors",
     )
+    _fig
     return _fig
 
 
@@ -605,6 +629,7 @@ def _(long_counts, px):
         width=800,
         title="Color and dash by number of doors",
     )
+    _fig
     return _fig
 
 
@@ -653,6 +678,7 @@ def _(cars, px):
         width=800,
         title="Average price by make and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -668,6 +694,7 @@ def _(cars, px):
         width=800,
         title="Fuel type hidden in the tooltip",
     )
+    _fig
     return _fig
 
 
@@ -684,6 +711,7 @@ def _(cars, px):
         width=800,
         title="Renamed tooltip fields",
     )
+    _fig
     return _fig
 
 
@@ -707,6 +735,7 @@ def _(cars, px):
         width=800,
         title="Sum of price by make and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -722,6 +751,7 @@ def _(cars, px):
         width=800,
         title="Price with one decimal place",
     )
+    _fig
     return _fig
 
 
@@ -738,6 +768,7 @@ def _(cars, px):
         width=800,
         title="Horsepower at the top of the tooltip",
     )
+    _fig
     return _fig
 
 
@@ -764,6 +795,7 @@ def _(cars, px):
         width=800,
         title="Price with no decimal places",
     )
+    _fig
     return _fig
 
 
@@ -799,6 +831,7 @@ def _(cars, px):
         width=800,
         title="A list of colors",
     )
+    _fig
     return _fig
 
 
@@ -814,6 +847,7 @@ def _(cars, px):
         width=800,
         title="A dictionary of colors",
     )
+    _fig
     return _fig
 
 
@@ -829,6 +863,7 @@ def _(cars, px):
         width=800,
         title="A continuous price scale",
     )
+    _fig
     return _fig
 
 

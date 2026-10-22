@@ -125,6 +125,7 @@ def _():
 @app.cell
 def _(px, x, y):
     line_fig = px.line(x=x, y=y, width=800)
+    line_fig
     return line_fig
 
 
@@ -159,6 +160,7 @@ def _(mo):
 def _(px):
     student_y = [1, 3, 2, 5, 4]
     _fig = px.line(x=[1, 2, 3, 4, 5], y=student_y, width=800, title="Your line")
+    _fig
     return _fig
 
 
@@ -183,6 +185,7 @@ def _(mo):
 @app.cell
 def _(px, x, y):
     _fig = px.bar(x=x, y=y, color=x, width=800, title="Five bars")
+    _fig
     return _fig
 
 
@@ -258,6 +261,7 @@ def _(px, symbol_counts):
         width=800,
         title="Cars at each risk symbol",
     )
+    _fig
     return _fig
 
 
@@ -270,6 +274,7 @@ def _(px, symbol_counts):
         width=800,
         title="Risk symbol (from safe to risky)",
     )
+    _fig
     return _fig
 
 
@@ -290,6 +295,7 @@ def _(cars, px):
         width=800,
         title="Sum of risk symbol by make",
     )
+    _fig
     return _fig
 
 
@@ -303,6 +309,7 @@ def _(cars, px):
         width=800,
         title="Sum of risk symbol by make",
     )
+    _fig
     return _fig
 
 
@@ -316,6 +323,7 @@ def _(cars, px):
         width=800,
         title="Sum of risk symbol by make and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -338,6 +346,7 @@ def _(cars, px):
         width=800,
         title="Sum of risk symbol by make and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -363,6 +372,7 @@ def _(cars, px):
         width=800,
         title="Sum of risk symbol by make and body style",
     )
+    _fig
     return _fig
 
 
@@ -398,6 +408,7 @@ def _(cars, px):
         width=800,
         title="Average risk symbol by make and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -420,6 +431,7 @@ def _(cars, px):
         width=800,
         title="Stacked averages of risk symbol",
     )
+    _fig
     return _fig
 
 
@@ -433,6 +445,7 @@ def _(cars, px):
         width=800,
         title="Average price by make",
     )
+    _fig
     return _fig
 
 
@@ -448,6 +461,7 @@ def _(cars, px):
         width=800,
         title="Average price by make and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -462,12 +476,14 @@ def _(mo):
 @app.cell
 def _(cars, px):
     _fig = px.histogram(cars, x="length", width=800, title="Car length")
+    _fig
     return _fig
 
 
 @app.cell
 def _(cars, px):
     _fig = px.histogram(cars, x="length", nbins=10, width=800, title="Car length, 10 bins")
+    _fig
     return _fig
 
 
@@ -481,6 +497,7 @@ def _(cars, px):
         width=800,
         title="Car length and body style",
     )
+    _fig
     return _fig
 
 
@@ -495,6 +512,7 @@ def _(cars, px):
         width=800,
         title="Car length, body style, and fuel type",
     )
+    _fig
     return _fig
 
 
@@ -518,6 +536,7 @@ def _(cars, px):
         width=800,
         title=f"Car length, {length_bins} bins",
     )
+    _fig
     return _fig
 
 
@@ -544,6 +563,7 @@ def _(mo):
 @app.cell
 def _(cars, px):
     _fig = px.histogram(cars, x="price", width=800, title="Price, counts")
+    _fig
     return _fig
 
 
@@ -556,6 +576,7 @@ def _(cars, px):
         width=800,
         title="Price, counts labeled",
     )
+    _fig
     return _fig
 
 
@@ -568,6 +589,7 @@ def _(cars, px):
         width=800,
         title="Price, probability density",
     )
+    _fig
     return _fig
 
 
@@ -581,6 +603,7 @@ def _(cars, px):
         width=800,
         title="Price, probability density",
     )
+    _fig
     return _fig
 
 
@@ -593,6 +616,7 @@ def _(cars, px):
         width=800,
         title="Horsepower",
     )
+    _fig
     return _fig
 
 
@@ -606,6 +630,7 @@ def _(cars, px):
         width=800,
         title="Horsepower, opacity 0.7",
     )
+    _fig
     return _fig
 
 
@@ -631,6 +656,7 @@ def _(cars, px):
         width=800,
         title="Average price by horsepower bin",
     )
+    _fig
     return _fig
 
 
@@ -645,6 +671,7 @@ def _(cars, px):
         width=800,
         title="Maximum price by horsepower bin",
     )
+    _fig
     return _fig
 
 
@@ -660,6 +687,7 @@ def _(cars, px):
         width=800,
         title="Minimum price by horsepower bin",
     )
+    _fig
     return _fig
 
 
@@ -683,6 +711,7 @@ def _(cars, px):
         width=800,
         title="City MPG by drive wheels",
     )
+    _fig
     return _fig
 
 
@@ -697,6 +726,7 @@ def _(cars, px):
         width=800,
         title="City MPG by drive wheels, with a rug",
     )
+    _fig
     return _fig
 
 
@@ -711,6 +741,7 @@ def _(cars, px):
         width=800,
         title="City MPG by drive wheels, with a box",
     )
+    _fig
     return _fig
 
 
@@ -725,6 +756,7 @@ def _(cars, px):
         width=800,
         title="City MPG by drive wheels, with a violin",
     )
+    _fig
     return _fig
 
 

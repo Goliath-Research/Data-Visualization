@@ -153,6 +153,7 @@ def _(alt, cars):
             y="highway_mpg",
         )
     )
+    _chart
     return _chart
 
 
@@ -174,6 +175,7 @@ def _(alt, cars):
             alt.Y("highway_mpg"),
         )
     )
+    _chart
     return _chart
 
 
@@ -195,6 +197,7 @@ def _(alt, cars):
             y="highway_mpg:Q",
         )
     )
+    _chart
     return _chart
 
 
@@ -208,6 +211,7 @@ def _(alt, cars):
             y="highway_mpg:Q",
         )
     )
+    _chart
     return _chart
 
 
@@ -221,6 +225,7 @@ def _(alt, cars):
             y="highway_mpg:Q",
         )
     )
+    _chart
     return _chart
 
 
@@ -249,6 +254,7 @@ def _(alt, cars):
             alt.Y("highway_mpg", scale=alt.Scale(zero=False)),
         )
     )
+    _chart
     return _chart
 
 
@@ -273,6 +279,7 @@ def _(alt, cars):
             alt.Size("num_cylinders"),
         )
     )
+    _chart
     return _chart
 
 
@@ -323,6 +330,7 @@ def _(alt, cars_sized):
             alt.Size("num_cylinders"),
         )
     )
+    _chart
     return _chart
 
 
@@ -345,6 +353,7 @@ def _(alt, cars_sized):
             alt.Size("num_cylinders"),
         )
     )
+    _chart
     return _chart
 
 
@@ -368,6 +377,7 @@ def _(alt, cars_sized):
             alt.Color("num_cylinders"),
         )
     )
+    _chart
     return _chart
 
 
@@ -383,6 +393,7 @@ def _(alt, cars_sized):
             alt.Color("fuel_type"),
         )
     )
+    _chart
     return _chart
 
 
@@ -407,6 +418,7 @@ def _(alt, cars_sized):
             alt.Shape("engine_location"),
         )
     )
+    _chart
     return _chart
 
 
@@ -424,6 +436,7 @@ def _(alt, cars_sized):
             alt.OpacityValue(0.5),
         )
     )
+    _chart
     return _chart
 
 
@@ -454,6 +467,7 @@ def _(alt, cars_sized):
         )
         .interactive()
     )
+    _chart
     return _chart
 
 
@@ -493,6 +507,7 @@ def _(alt, cars_sized):
             },
         )
     )
+    _chart
     return _chart
 
 
@@ -538,6 +553,7 @@ def _(alt, cars_sized):
             grid=False,
         )
     )
+    _chart
     return _chart
 
 
@@ -562,6 +578,7 @@ def _(alt, cars):
             alt.Y("highway_mpg", scale=alt.Scale(zero=student_zero)),
         )
     )
+    _chart
     return _chart
 
 

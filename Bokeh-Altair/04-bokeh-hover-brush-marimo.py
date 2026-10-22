@@ -158,6 +158,7 @@ def _(HoverTool, figure):
     )
     _fig.line(x1, y1, line_width=2)
     _fig.scatter(x1, y1, marker="circle", size=15, line_color="white")
+    _fig
     return _fig
 
 
@@ -204,6 +205,7 @@ def _(ColumnDataSource, HoverTool, cumsum, figure, np, pi):
     )
     _fig.legend.orientation = "horizontal"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
@@ -257,6 +259,7 @@ def _(figure, sunspots):
         width=900,
     )
     _fig.line(x=sunspots.Date, y=sunspots.Sunspots, line_width=2)
+    _fig
     return _fig
 
 
@@ -293,6 +296,7 @@ def _(ColumnDataSource, figure, sunspots):
         width=900,
     )
     _fig.line(x="x", y="y", line_width=2, source=sun_source)
+    _fig
     return _fig
 
 
@@ -330,6 +334,7 @@ def _(BoxAnnotation, ColumnDataSource, figure, sunspots):
     _fig.line(x="x", y="y", line_width=2, source=_source)
     _fig.add_layout(BoxAnnotation(top=100, fill_alpha=0.2, fill_color="palegreen"))
     _fig.add_layout(BoxAnnotation(bottom=300, fill_alpha=0.2, fill_color="lightcoral"))
+    _fig
     return _fig
 
 
@@ -403,6 +408,7 @@ def _(mo):
 def _(gridplot, price_trio):
     _highway, _city, _power = price_trio()
     _layout = gridplot([[_highway, _city, _power]], width=300, height=300)
+    _layout
     return _layout
 
 
@@ -420,6 +426,7 @@ def _(mo):
 def _(price_trio, row):
     _highway, _city, _power = price_trio()
     _layout = row(_highway, _city, _power)
+    _layout
     return _layout
 
 
@@ -437,6 +444,7 @@ def _(mo):
 def _(gridplot, price_trio):
     _highway, _city, _power = price_trio()
     _layout = gridplot([[_highway, _city], [_power]], width=350, height=300)
+    _layout
     return _layout
 
 
@@ -454,6 +462,7 @@ def _(mo):
 def _(gridplot, price_trio):
     _highway, _city, _power = price_trio()
     _layout = gridplot([[_highway, _city], [None, _power]], width=350, height=300)
+    _layout
     return _layout
 
 
@@ -471,6 +480,7 @@ def _(mo):
 def _(gridplot, price_trio):
     _highway, _city, _power = price_trio()
     _layout = gridplot([[_highway], [_city], [_power]], width=350, height=200)
+    _layout
     return _layout
 
 
@@ -478,6 +488,7 @@ def _(gridplot, price_trio):
 def _(column, price_trio):
     _highway, _city, _power = price_trio()
     _layout = column(_highway, _city, _power)
+    _layout
     return _layout
 
 

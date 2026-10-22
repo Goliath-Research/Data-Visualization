@@ -168,6 +168,7 @@ def _(figure, length_counts, length_edges):
         fill_color="salmon",
         line_color="white",
     )
+    _fig
     return _fig
 
 
@@ -214,12 +215,14 @@ def _(mo):
 @app.cell
 def _(cars, create_hist):
     _fig = create_hist(cars.length, 10)
+    _fig
     return _fig
 
 
 @app.cell
 def _(cars, create_hist):
     _fig = create_hist(cars.length, 5)
+    _fig
     return _fig
 
 
@@ -237,6 +240,7 @@ def _(mo):
 def _(cars, create_hist):
     student_bins = 5
     _fig = create_hist(cars.length, student_bins)
+    _fig
     return _fig
 
 
@@ -264,12 +268,14 @@ def _(mo):
 @app.cell
 def _(cars, create_hist):
     _fig = create_hist(cars.width, 10)
+    _fig
     return _fig
 
 
 @app.cell
 def _(cars, create_hist):
     _fig = create_hist(cars.width, 5)
+    _fig
     return _fig
 
 
@@ -284,12 +290,14 @@ def _(mo):
 @app.cell
 def _(cars, create_hist):
     _fig = create_hist(cars.height, 10)
+    _fig
     return _fig
 
 
 @app.cell
 def _(cars, create_hist):
     _fig = create_hist(cars.height, 5)
+    _fig
     return _fig
 
 
@@ -383,6 +391,7 @@ def _(
         line_color="lightblue",
         line_alpha=0.8,
     )
+    _fig
     return _fig
 
 
@@ -458,6 +467,7 @@ def _(
     )
     _fig.line(x=dimension_means, y=tallest, color="grey", line_width=2)
     _fig.scatter(x=dimension_means, y=tallest, marker="circle", fill_color="grey", size=10)
+    _fig
     return _fig
 
 
@@ -528,6 +538,7 @@ def _(
     _fig.add_layout(BoxAnnotation(top=20, fill_alpha=0.2, fill_color="powderblue"))
     _fig.add_layout(BoxAnnotation(bottom=20, top=40, fill_alpha=0.2, fill_color="beige"))
     _fig.add_layout(BoxAnnotation(bottom=40, fill_alpha=0.2, fill_color="powderblue"))
+    _fig
     return _fig
 
 
@@ -583,6 +594,7 @@ def _(ColumnDataSource, body_slices, cumsum, figure):
         legend_field="body_style",
         source=_source,
     )
+    _fig
     return _fig
 
 
@@ -613,6 +625,7 @@ def _(ColumnDataSource, body_slices, cumsum, figure):
     )
     _fig.legend.orientation = "horizontal"
     _fig.legend.location = "top"
+    _fig
     return _fig
 
 
