@@ -3,7 +3,7 @@
 # dependencies = [
 #     "marimo",
 #     "pandas",
-#     "altair",
+#     "altair>=5.3,<6",
 # ]
 # ///
 

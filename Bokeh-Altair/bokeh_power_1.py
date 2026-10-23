@@ -9,7 +9,7 @@ from bokeh.models import Toggle, Slider
 from bokeh.io import curdoc
 
 # Load and preprocess Tetouan City power consumption dataset
-df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00616/Tetuan%20City%20power%20consumption.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Goliath-Research/Data-Visualization/main/Plotly-Dash/Tetuan-City-power-consumption.csv')
 
 # Simplify column names for ease of use
 df.rename(columns={ 'Zone 1 Power Consumption' : 'Zone1', 

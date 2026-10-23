@@ -3,7 +3,7 @@
 # dependencies = [
 #     "marimo",
 #     "pandas",
-#     "altair",
+#     "altair>=5.3,<6",
 # ]
 # ///
 
@@ -42,7 +42,7 @@ def _(mo):
 
     The legend is a point selection on `Zone`. The scatters share that selection, so a click highlights one zone. Click and Shift adds another zone. The month control is a range binding on `Month`, starting at 1. `transform_filter` keeps that month.
 
-    The charts show the daily mean power next to temperature, humidity, and wind speed. They do not measure a policy effect.
+    The charts show the daily mean power next to temperature, humidity, and wind speed. They show patterns, not causes.
 
     ## Datasets Used
 
@@ -111,8 +111,9 @@ def _(mo):
 @app.cell
 def _(pd, power):
     daily = (
-        power.groupby(pd.Grouper(key="DateTime", freq="1D"), as_index=False)
+        power.groupby(pd.Grouper(key="DateTime", freq="1D"))
         .mean()
+        .reset_index()
         .assign(Month=lambda frame: frame.DateTime.dt.month)
     )
     print(daily.shape)
@@ -144,7 +145,7 @@ def _(mo):
     mo.md(r"""
     ## Zone legend
 
-    The legend and the temperature scatter share one selection. Click a zone. Click and Shift to add another. Unselected zones turn light gray.
+    The legend and the temperature scatter share one selection. Click a zone. Click and Shift to add another. Unselected zones turn light grey.
     """)
     return
 
@@ -502,7 +503,7 @@ def _(mo):
 
     - The file has 52,416 rows, one every 10 minutes, from 1 January 2017 through 30 December 2017. The daily mean has 364 days. December 31 is absent.
     - Melting the three zone columns makes 1,092 rows: 364 days times 3 zones. `Zone` is the zone name and `Power` is that zone's daily mean.
-    - The legend selects zones. Click and Shift selects more than one. Unselected zones are light gray. Temperature, humidity, and wind speed each have their own scatter against power.
+    - The legend selects zones. Click and Shift selects more than one. Unselected zones are light grey. Temperature, humidity, and wind speed each have their own scatter against power.
     - The month slider starts at 1 and keeps one month. The same zone selection works inside that month.
     """)
     return
@@ -532,7 +533,7 @@ def _(mo):
 1. **52,416 rows.** That is one reading every 10 minutes.
 2. **December 31 is missing.** 2017 would have 365 days. The file stops on 30 December.
 3. **1,092 rows.** 364 days times the three zones.
-4. **It highlights that zone.** The other zones turn light gray.
+4. **It highlights that zone.** The other zones turn light grey.
 5. **Click and Shift.** The selection can hold more than one zone.
 6. **The daily rows of one month.** Temperature, humidity, and wind speed all use that filter.
 7. **January.** The selection value is 1.
@@ -548,7 +549,7 @@ def _(mo):
     mo.md(r"""
     ## References
 
-    - Altair. *Interactive charts.* https://altair-viz.github.io/user_guide/interactions.html
+    - Altair. *Interactive charts.* https://altair-viz.github.io/user_guide/interactions/index.html
     - UCI Machine Learning Repository. *Power consumption of Tetouan city.* https://archive.ics.uci.edu/dataset/849/power+consumption+of+tetouan+city
     """)
     return

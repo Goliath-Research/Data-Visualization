@@ -3,7 +3,7 @@
 # dependencies = [
 #     "marimo",
 #     "pandas",
-#     "altair",
+#     "altair>=5.3,<6",
 # ]
 # ///
 
@@ -231,7 +231,7 @@ def _(mo):
     mo.md(r"""
     ## A legend of one field
 
-    The selection field is `body_style`. The scatter and the legend share that selection. Click a body style on the legend. Click and Shift to add another. Points of the selected styles keep their color. The others turn light gray.
+    The selection field is `body_style`. The scatter and the legend share that selection. Click a body style on the legend. Click and Shift to add another. Points of the selected styles keep their color. The others turn light grey.
     """)
     return
 
@@ -323,7 +323,7 @@ def _(mo):
     | `binding_range` | A slider |
     | `binding_checkbox` | Checkboxes |
 
-    The first dropdown lists the body styles and starts on sedan. Empty means no style is selected, so the points are light gray until you choose one.
+    The first dropdown lists the body styles and starts on sedan, so the sedan cars are colored from the start and the other cars are light grey. Choose another style to move the color.
     """)
     return
 
@@ -545,7 +545,7 @@ def _(mo):
     ## References
 
     - Altair. *Documentation.* https://altair-viz.github.io/
-    - Altair. *Interactive charts.* https://altair-viz.github.io/user_guide/interactions.html
+    - Altair. *Interactive charts.* https://altair-viz.github.io/user_guide/interactions/index.html
     """)
     return
 

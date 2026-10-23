@@ -811,7 +811,7 @@ def _(mo):
     mo.md(r"""
     ## Save an HTML file
 
-    `output_file` names the file. `save` writes the line-and-circles figure into `Simple Line.html` in this folder. Open that file in a browser to see the chart by itself.
+    `output_file` names the file. `save` writes the line-and-circles figure into `Simple Line.html` in this folder. When the lesson runs on your computer, open that file in a browser to see the chart by itself.
     """)
     return
 
@@ -863,7 +863,7 @@ def _(mo):
     1. What does `toolbar_location="above"` change?
     2. Which two glyphs are on the chart titled Simple Line Graph that has a legend?
     3. How does `step` move from one point to the next?
-    4. What happens to the three lines when `x1` is missing at indexes 2 and 6?
+    4. What happens to the three lines when `x1` has missing values at indexes 2 and 6?
     5. On the circle chart, which series has the largest markers?
     6. What does `fill_alpha=0.2` do to a marker?
     7. What file does `save` write?

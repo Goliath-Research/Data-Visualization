@@ -3,7 +3,7 @@
 # dependencies = [
 #     "marimo",
 #     "pandas",
-#     "altair",
+#     "altair>=5.3,<6",
 # ]
 # ///
 
@@ -569,7 +569,7 @@ def _(mo):
     ## References
 
     - Altair. *Documentation.* https://altair-viz.github.io/
-    - Altair. *Bin.* https://altair-viz.github.io/user_guide/generated/channels/altair.Bin.html
+    - Altair. *Bin transform.* https://altair-viz.github.io/user_guide/transform/bin.html
     - Altair. *Fold transform.* https://altair-viz.github.io/user_guide/transform/fold.html
     """)
     return
