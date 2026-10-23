@@ -494,7 +494,7 @@ def _(px, wide_counts):
         wide_counts,
         facet_col="body_style",
         width=900,
-        title="One column of panels",
+        title="One panel per column",
     )
     _fig
     return _fig
@@ -507,7 +507,7 @@ def _(px, wide_counts):
         facet_row="body_style",
         width=600,
         height=900,
-        title="One row of panels",
+        title="One panel per row",
     )
     _fig
     return _fig
@@ -544,14 +544,17 @@ def _(mo):
     mo.md(r"""
     ### Bars from the long table
 
-    Plotly Express treats a call with no `x` and no `y` as a wide table. This long table has text columns and a numeric `value` column, so that guess fails. The next cell stops with this error: `ValueError: Plotly Express cannot process wide-form data with columns of different type`. The cell after it names `x="body_style"` and `y="value"`.
+    Plotly Express treats a call with no `x` and no `y` as a wide table. This long table has text columns and a numeric `value` column, so that guess fails. The next cell prints this error: `ValueError: Plotly Express cannot process wide-form data with columns of different type`. The cell after it names `x="body_style"` and `y="value"`.
     """)
     return
 
 
 @app.cell
 def _(long_counts, px):
-    px.bar(long_counts, width=800, title="This cell stops")
+    try:
+        px.bar(long_counts, width=800, title="This cell stops")
+    except ValueError as error:
+        print("ValueError:", error)
     return
 
 
@@ -718,7 +721,7 @@ def _(cars, px):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    The same labels on a bar chart rename the legend as well. `px.bar` adds the price of every car in that make and fuel type, so the height is a sum. `":.1f"` shows that sum with one decimal place. `hover_name="horsepower"` puts a horsepower value at the top of the tooltip.
+    The same labels on a bar chart rename the legend as well. `px.bar` adds the price of every car in that make and fuel type, so the height is a sum. Each car is one piece of the bar, and its tooltip shows that car's price. `":.1f"` shows it with one decimal place. `hover_name="horsepower"` puts a horsepower value at the top of the tooltip.
     """)
     return
 
@@ -802,7 +805,7 @@ def _(cars, px):
 @app.cell(hide_code=True)
 def _(mo):
     mo.accordion({"Show answers": mo.md(r"""
-**None.** `:.0f` rounds the sum of `price` to a whole number.
+**None.** `:.0f` rounds the `price` to a whole number.
 """)}, lazy=True)
     return
 

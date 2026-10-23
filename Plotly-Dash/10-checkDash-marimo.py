@@ -230,7 +230,7 @@ def _(mo):
     - The checklist value is a list of zone names. All three start checked.
     - The line chart draws one line per checked name, in the order Zone 1, Zone 2, Zone 3.
     - The vertical axis stays at Zone 1's maximum plus 5,000, including when a zone is unchecked.
-    - An empty list draws no lines. The title asks for at least one zone.
+    - An empty list draws no lines. In this file, the title asks for at least one zone.
     """)
     return
 
@@ -258,7 +258,7 @@ def _(mo):
 2. **All three zones:** `Zone1`, `Zone2`, and `Zone3`.
 3. **To keep a stable order:** A checked zone is drawn in that fixed order, whichever way the checklist returns the names.
 4. **0 to Zone 1's maximum plus 5,000:** Unchecking a zone does not move the axis.
-5. **No lines:** The figure title is "Select at least one zone".
+5. **No lines:** In this file, the figure title is "Select at least one zone".
 6. **The power values Plotly stacked:** A wide line chart stores the zone columns in one `value` field. The format shows two decimal places.
 7. **The figure of `line-gr`:** The input is the `value` of `zone-check`.
 """)}, lazy=True)
