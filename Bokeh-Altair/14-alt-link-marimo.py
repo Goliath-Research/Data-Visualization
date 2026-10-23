@@ -3,7 +3,7 @@
 # dependencies = [
 #     "marimo",
 #     "pandas",
-#     "altair",
+#     "altair>=5.3,<6",
 # ]
 # ///
 
@@ -483,7 +483,7 @@ def _(mo):
     mo.md(r"""
     ### Try it yourself
 
-    The cross-filter uses `encodings=["x"]`. If you brush the length histogram, which axis is shared with width and height?
+    The cross-filter uses `encodings=["x"]`. If you brush the length histogram, which axis does the brush use, and what do the width and height panels show?
     """)
     return
 
@@ -562,7 +562,7 @@ def _(mo):
     mo.md(r"""
     ## References
 
-    - Altair. *Interactive charts.* https://altair-viz.github.io/user_guide/interactions.html
+    - Altair. *Interactive charts.* https://altair-viz.github.io/user_guide/interactions/index.html
     - Vega-Lite. *Aggregate operations.* https://vega.github.io/vega-lite/docs/aggregate.html
     - Wikipedia. *Sunspot.* https://en.wikipedia.org/wiki/Sunspot
     - SIDC, Royal Observatory of Belgium. *Sunspot Number.* https://www.sidc.be/SILSO/home
