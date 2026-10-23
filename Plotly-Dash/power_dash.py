@@ -15,8 +15,8 @@ df=pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00616/
 df.DateTime = pd.to_datetime(df.DateTime)
 
 # Renaming some columns
-df.rename(columns={'Zone 1 Power Consumption': 'Zone1', 'Zone 2  Power Consumption': 'Zone2', 
-                   'Zone 3  Power Consumption': 'Zone3'}, inplace=True)
+df = df.rename(columns={'Zone 1 Power Consumption': 'Zone1', 'Zone 2  Power Consumption': 'Zone2', 
+                   'Zone 3  Power Consumption': 'Zone3'})
 
 # Adding a column with Month
 df['Month'] = df.DateTime.dt.month
@@ -119,4 +119,4 @@ def update_graphs(sel_month, sel_zones):
 
 # Run local server
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)

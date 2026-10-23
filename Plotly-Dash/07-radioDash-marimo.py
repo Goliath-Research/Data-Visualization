@@ -37,7 +37,7 @@ def _(mo):
 
     A radio list shows every choice at once and keeps one choice selected. The Dash callback has one input, the radio value, and one output, the figure.
 
-    The vertical range is computed from Zone 1: 0 through that zone's maximum daily power, plus 5,000. Zone 2 and Zone 3 stay inside that range, so changing the station does not rescale the chart. The line color stays orange-red for every zone.
+    The vertical range is computed from Zone 1: 0 through that zone's maximum daily power, plus 5,000. Zone 2 and Zone 3 stay inside that range, so changing the zone does not rescale the chart. The line color stays orange-red for every zone.
 
     ## Datasets Used
 
